@@ -166,13 +166,13 @@ a:visited {
 }
 
 .boton {
-  border: none;
+  border: #54eca1 solid 2px;
   color: #3c4246;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  background-color: #54eca1;
+  
 }
 .boton {
   transition-duration: 0.4s;
