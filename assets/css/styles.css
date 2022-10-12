@@ -9,11 +9,15 @@
 header{
     background-color: #428fbf;
     display: flex;
+    color: white;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     max-width: 1000px;
     margin: auto;
+}
+.lugar{
+    padding: 15px;
 }
 nav{
     background-color: #275775;
@@ -35,22 +39,26 @@ nav{
 
 .nav_items ul{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    justify-content:space-around;
+    align-items: stretch;
     padding-inline-start: 0;
-    margin-block: 0;
     height: 100%;
+    border: 1px solid white;
+    list-style: none;
 } 
   nav > ul > li {
     color: #dfdfe2;
     margin: 0 0.2rem;
     padding: 0rem;
     display: block;
+    
   }
   li > a {
-    color: inherit;
-    text-decoration: none;
+    color: white;
+    text-decoration: none;    
+  }
+  li > a:hover{
+    color: #54eca1;
   }
 
 a{
@@ -67,23 +75,41 @@ a{
     max-width: 1000px;
     position: relative;
     margin: auto;
+    overflow:hidden;
+    border-bottom-left-radius: 30px;
   }
 .fade {
     animation-name: fade;
+    position: relative;
     animation-duration: 4s;
+    animation-direction:alternate-reverse;
+    height: 400px;
+    
+    max-width: 1000px;
+    z-index: -1;
+    border: 5px white;
   }
   
   @keyframes fade {
-    from {opacity: .4}
-    to {opacity: .2}
+    from {opacity: .4;
+          left: -20px;
+          top: 0px;}
+    to {opacity: .9;
+        left:0px;
+        top: -20px;}
   }
   .mySlides {
     display: none;
   }
 #principal {
     display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: auto;
 }
 #principal .titulo{
     display: block;
 }
-  
+.imagen{
+  border-radius: 10%;
+}
