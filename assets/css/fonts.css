@@ -1,6 +1,8 @@
-.titulo, .subtitulo{
-    
+* {
     font-family: 'Roboto', sans-serif;
+}
+.titulo, .subtitulo{
+
     text-align: center;
     color: #428fbf;
     width: auto;
@@ -30,8 +32,22 @@ li > a, .lugar {
     font-family: 'Roboto', sans-serif;
 }
 .izquierda > p{
-    font-family: 'Roboto', sans-serif;
+
     font-size: 1.3rem;
     padding-left: 10%;
     padding-right: 10%;
+}
+.siguiente > div > h2{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+.siguiente > div > h3{
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.siguiente > div > h3 > a:hover{
+    color: #54eca1;
 }

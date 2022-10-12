@@ -106,10 +106,21 @@ a{
     flex-direction: row;
     max-width: 1000px;
     margin: auto;
+    padding: 20px;
 }
 #principal .titulo{
     display: block;
 }
 .imagen{
   border-radius: 10%;
+}
+.siguiente{
+  display: flex;
+  width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    background-color: #3c4246;
+    justify-content: space-around;
+  padding: 15px;
 }
