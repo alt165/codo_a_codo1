@@ -1,31 +1,34 @@
 * {
-    /* border: 1px solid black; */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
- 
-header{
-    background-color: #428fbf;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    max-width: 1000px;
-    margin: auto;
+
+header {
+  background-color: #428fbf;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: auto;
 }
-.lugar{
-    padding: 15px;
+
+.lugar {
+  padding: 15px;
 }
-nav{
-    background-color: #275775;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    max-height: 50px;
+
+nav {
+  background-color: #275775;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  max-height: 50px;
 }
+
 /* nav > ul {
     display: flex;
     justify-content: space-evenly;
@@ -35,92 +38,147 @@ nav{
     margin-block: 0;
     height: 100%;
   } */
-  
 
-.nav_items ul{
-    display: flex;
-    justify-content:space-around;
-    align-items: stretch;
-    padding-inline-start: 0;
-    height: 100%;
-    border: 1px solid white;
-    list-style: none;
-} 
-  nav > ul > li {
-    color: #dfdfe2;
-    margin: 0 0.2rem;
-    padding: 0rem;
-    display: block;
-    
-  }
-  li > a {
-    color: white;
-    text-decoration: none;    
-  }
-  li > a:hover{
-    color: #54eca1;
-  }
 
-a{
-    text-decoration: none;
+.nav_items ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-inline-start: 0;
+  height: 100%;
+  border: 1px solid white;
+  list-style: none;
 }
 
-.logo{
-    padding: 10px;
-    margin-left: 15px;
+nav>ul>li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0rem;
+  display: block;
+
+}
+
+li>a {
+  color: white;
+  text-decoration: none;
+}
+
+li>a:hover {
+  color: #54eca1;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.logo {
+  padding: 10px;
+  margin-left: 15px;
 }
 
 
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    overflow:hidden;
-    border-bottom-left-radius: 30px;
-  }
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-bottom-left-radius: 30px;
+}
+
 .fade {
-    animation-name: fade;
-    position: relative;
-    animation-duration: 4s;
-    animation-direction:alternate-reverse;
-    height: 400px;
-    
-    max-width: 1000px;
-    z-index: -1;
-    border: 5px white;
+  animation-name: fade;
+  position: relative;
+  animation-duration: 4s;
+  animation-direction: alternate-reverse;
+  height: 400px;
+
+  max-width: 1000px;
+  z-index: -1;
+  border: 5px white;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+    left: -20px;
+    top: 0px;
   }
-  
-  @keyframes fade {
-    from {opacity: .4;
-          left: -20px;
-          top: 0px;}
-    to {opacity: .9;
-        left:0px;
-        top: -20px;}
+
+  to {
+    opacity: .9;
+    left: 0px;
+    top: -20px;
   }
-  .mySlides {
-    display: none;
-  }
+}
+
+.mySlides {
+  display: none;
+}
+
 #principal {
-    display: flex;
-    flex-direction: row;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
-#principal .titulo{
-    display: block;
+
+#principal .titulo {
+  display: block;
 }
-.imagen{
+
+.imagen {
   border-radius: 10%;
 }
-.siguiente{
+
+.siguiente {
   display: flex;
   width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    align-items: center;
-    background-color: #3c4246;
-    justify-content: space-around;
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
+  background-color: #3c4246;
+  justify-content: space-around;
   padding: 15px;
+  
+}
+.siguiente div{
+  display: flex;
+  max-width: 30%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+.siguiente div > *{
+  padding: 8px;
+}
+
+.izquierda {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top: 70px;
+}
+
+.boton {
+  border: none;
+  color: #3c4246;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #54eca1;
+}
+.boton {
+  transition-duration: 0.4s;
+}
+
+.boton:hover {
+  background-color: white;
+  color: #3c4246;
 }

@@ -1,4 +1,4 @@
-* {
+body {
     font-family: 'Roboto', sans-serif;
 }
 .titulo, .subtitulo{
@@ -8,7 +8,6 @@
     width: auto;
     min-width: 300px;
     position:absolute;
-    
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -40,14 +39,19 @@ li > a, .lugar {
 .siguiente > div > h2{
     color: white;
     font-size: 2rem;
-    text-decoration: none;
+    font-weight: normal;
 
 }
 .siguiente > div > h3{
     color: white;
     font-size: 1.1rem;
-    text-decoration: none;
+    font-weight: normal;
 }
 .siguiente > div > h3 > a:hover{
     color: #54eca1;
+}
+.boton{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
 }
