@@ -7,21 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" href="fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    
     <title>Numa Cabañas</title>
 </head>
 
 <body>
 
-    <nav>        
+    <header>        
         <img class="logo" src="assets/img/logo.png" alt="logo Cabañas Numa">
-        
-        <h1 class="header">Hotel Numa</h1>
-        <div class="break"></div>
+    </header>
+    <nav>
         <div class="nav_items">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -35,51 +34,38 @@
     <main>
         <!-- Slideshow container -->
 <div class="slideshow-container">
-
+    
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <img src="assets/img/index_images/hotel.jpg" style="width:100%">
+      <!-- "https://www.freepik.es/foto-gratis/tipo-complejo-entretenimiento-popular-complejo-piscinas-parques-acuaticos-turquia-mas-5-millones-visitantes-al-ano-amara-dolce-vita-hotel-lujo-recurso-tekirova-kemer_10123976.htm#query=hotel&position=1&from_view=search&track=sph" Imagen de standret en Freepik -->
+      
     </div>
   
     <div class="mySlides fade">
       <img src="assets/img/index_images/hotel-bell.jpg" style="width:100%">
+      <!-- "https://www.freepik.es/foto-gratis/alarma-hotel_1032802.htm#query=hotel&position=0&from_view=search&track=sph" Imagen de mrsiraphol en Freepik-->
     </div>
   
     <div class="mySlides fade">
       <img src="assets/img/index_images/luxury.jpg" style="width:100%">
+      <!-- "https://www.freepik.es/foto-gratis/suite-dormitorio-moderno-clasico-lujo-hotel_10332602.htm#query=hotel&position=3&from_view=search&track=sph" Imagen de dit26978 en Freepik -->
     </div>
 
     <div class="mySlides fade">
         <img src="assets/img/index_images/housekeeper.jpg" style="width:100%">
+        <!-- "https://www.freepik.es/foto-gratis/ama-casa-limpiando-habitacion-hotel_2978562.htm#query=hotel&position=17&from_view=search&track=sph" Imagen de rawpixel.com en Freepik -->
       </div>
   </div>
   <div style="text-align:center">
+    <h1 class="titulo">Hotel Numa</h1>
+    <h2 class="subtitulo">Descanso y relax</h2>
     <span class="dot"></span> 
     <span class="dot"></span> 
     <span class="dot"></span>
     <span class="dot"></span> 
   </div>
-  <script>
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 3000); // Change image every 2 seconds
-    }
-    </script>
+  <script src="assets/js/slideshow.js"></script>
   
 
 
