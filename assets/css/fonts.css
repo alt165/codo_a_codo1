@@ -18,3 +18,9 @@
     top: 42%;
     font-size: 2rem;
 }
+.izquierda .titulo{
+    position: relative;
+    color: #275775;
+    padding: 20%;
+    font-size: 3rem;
+}
