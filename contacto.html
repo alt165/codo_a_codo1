@@ -2,15 +2,24 @@
 <html lang="en"> 
  
 <head> 
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./assets/css/styles.css"> 
-    <title>COMPLEJO CABAÑAS - Contacto</title> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <title>Hotel Numa - Contacto</title> 
 </head> 
  
 <body> 
-    <nav>  
+    <header> 
+        <img class="logo" src="assets/img/logo.png" alt="logo Cabañas Numa"> 
+        <p class="lugar">Santa Ococha - Perú</p> 
+    </header> 
+    <nav> 
         <div class="nav_items"> 
             <ul> 
                 <li><a href="index.html">Inicio</a></li> 
@@ -20,40 +29,51 @@
             </ul> 
         </div> 
     </nav> 
-    <h1>Contacto</h1> 
-    <div class="nav_logo_centrar"> 
-        <img src="assets/img/WhatsApp-logo.jpg" alt="" width="50" height="50"> 
-    </div> 
+    <h1>Contacto 
+        <div class="nav_logo_centrar"> 
+            <img src="assets/img/WhatsApp-logo.jpg" alt="" width="50" height="50"> 
+        </div> 
+    </h1> 
     <br> 
     <form action="" method=""> 
-        <div> 
-            <label for="fname">Nombre: </label> 
-            <input size="50" type="text" name="fname" id="fname" required placeholder="Ingrese su nombre"> 
-        </div> 
-        <br> 
-        <div> 
-            <label for="lname">Apellido: </label> 
-            <input size="50" type="text" name="lname" id="lname" required placeholder="Ingrese su apellido"> 
-        </div> 
-        <br> 
-        <div> 
-            <label for="phone">Número de teléfono: </label> 
-            <input size="" type="text" name="phone" id="phone" required placeholder="Ingrese su número de teléfono"> 
-        </div> 
-        <br> 
-        <div> 
-            <label for="email">Correo electónico: </label> 
-            <input size="42" type="text" name="email" id="email" required placeholder="Ingrese su correo electónico"> 
-        </div> 
-        <br> 
-        <div> 
-            <label for="consultas">Consulta: </label> 
-            <input size="50" type="text" name="consultas" id="consultas" required placeholder="Ingrese su consulta"> 
-        </div> 
-        <br> 
- 
+        <fieldset> 
+            <div> 
+                <label for="fname">Nombre: </label> 
+                <input type="text" name="fname" id="fname" required placeholder="Ingrese su nombre"> 
+            </div> 
+            <br> 
+            <div> 
+                <label for="lname">Apellido: </label> 
+                <input type="text" name="lname" id="lname" required placeholder="Ingrese su apellido"> 
+            </div> 
+            <br> 
+            <div> 
+                <label for="phone">Número de teléfono: </label> 
+                <input type="text" name="phone" id="phone" required placeholder="Ingrese su número de teléfono"> 
+            </div> 
+            <br> 
+            <div> 
+                <label for="email">Correo electónico: </label> 
+                <input type="text" name="email" id="email" required placeholder="Ingrese su correo electónico"> 
+            </div> 
+            <br> 
+        </fieldset> 
+        <fieldset> 
+            <div> 
+                <label for="consultas">Consulta: </label> 
+                <textarea name="consultas" id="consultas" cols="30" rows="10"></textarea> 
+            </div> 
+            <br> 
+        </fieldset> 
     </form> 
-    <mouse href="index.html">Inicio</mouse> 
+ 
 </body> 
+ 
+<footer> 
+    <ul> 
+        <li>Website desarrollado por Cañete Andrés, Chen Romana y Lambrechts José</li> 
+        <li>Copyright 2022 &copy; Todos los derechos reservados.</li> 
+    </ul> 
+</footer> 
  
 </html>
