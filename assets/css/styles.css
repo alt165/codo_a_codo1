@@ -117,11 +117,13 @@ a:visited {
   max-width: 1000px;
   margin: auto;
   padding: 20px;
-  vertical-align: middle;
+   
 }
 
-#principal .titulo {
+#principal .izquierda {
   display: block;
+  height: fit-content;
+  
 }
 
 .imagen {
@@ -195,4 +197,30 @@ h1{
   max-width: 500px; 
   min-width: 300px; 
   margin: 0 auto; 
+}
+.izquierda{
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+}
+footer section{
+  background-color:#275775;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3%;
+  max-width: 1000px;
+  margin:auto;
+  color: white;
+}
+section div{
+  vertical-align: top;
+}
+.desarrolladores{
+  background-color: #3c4246;
+  margin: auto;
+  max-width: 1000px;
+  align-items: center;
+  max-height: fit-content;
+  padding: 3px;
 }
