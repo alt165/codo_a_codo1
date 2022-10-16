@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.titulo, .subtitulo{
+
+    text-align: center;
+    color: #275775;
+    width: auto;
+    min-width: 300px;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.titulo{
+    top: 35%;
+    font-size: 4rem;
+}
+.subtitulo{
+    top: 42%;
+    font-size: 2rem;
+}
+.izquierda .titulo{
+    position: relative;
+    color: #275775;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 3rem;
+}
+
+li > a, .lugar {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.izquierda > p{
+
+    font-size: 1.3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.siguiente > div > h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+
+}
+.siguiente > div > h3{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.siguiente > div > h3 > a:hover{
+    color: #54eca1;
+}
+.boton{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 300px;
+}
+.desarrolladores{
+    color: white;
+    font-size: 0.9rem;
+}
