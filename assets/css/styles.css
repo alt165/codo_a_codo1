@@ -249,3 +249,17 @@ section div{
   max-height: fit-content;
   padding: 3px;
 }
+
+.redes ul li{
+  list-style: none;
+}
+
+.redes ul li a{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.titulo_contacto{
+  color: #275775;
+  font-size: 3rem;
+}

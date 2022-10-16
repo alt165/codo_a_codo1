@@ -30,32 +30,32 @@
             </ul> 
         </div> 
     </nav> 
-    <h1>Contacto 
-        <div class="nav_logo_centrar"> 
+    <h1 class="titulo_contacto">Contacto 
+        <!-- <div class="nav_logo_centrar"> 
             <img src="assets/img/WhatsApp-logo.jpg" alt="" width="50" height="50"> 
-        </div> 
+        </div>  -->
     </h1> 
     <br> 
-    <form action="" method=""> 
+    <form action="/login.php" id="formulario"> 
         <fieldset> 
             <div> 
                 <label for="fname">Nombre: </label> 
-                <input type="text" name="fname" id="fname" required placeholder="Ingrese su nombre"> 
+                <input type="text" name="fname" id="fname"  placeholder="Ingrese su nombre"> 
             </div> 
             <br> 
             <div> 
                 <label for="lname">Apellido: </label> 
-                <input type="text" name="lname" id="lname" required placeholder="Ingrese su apellido"> 
+                <input type="text" name="lname" id="lname" placeholder="Ingrese su apellido"> 
             </div> 
             <br> 
             <div> 
                 <label for="phone">Número de teléfono: </label> 
-                <input type="text" name="phone" id="phone" required placeholder="Ingrese su número de teléfono"> 
+                <input type="text" name="phone" id="phone" placeholder="Ingrese su número de teléfono"> 
             </div> 
             <br> 
             <div> 
                 <label for="email">Correo electónico: </label> 
-                <input type="text" name="email" id="email" required placeholder="Ingrese su correo electónico"> 
+                <input type="text" name="email" id="email" placeholder="Ingrese su correo electónico"> 
             </div> 
             <br> 
         </fieldset> 
@@ -64,12 +64,12 @@
                 <label for="consultas">Consulta: </label> 
                 <textarea name="consultas" id="consultas" cols="30" rows="10"></textarea> 
             </div> 
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
+            <div> 
+                <input type="submit" value="Entrar" onclick="valida_envia()"> 
+            </div> 
             <br> 
         </fieldset> 
-    </form> 
+    </form>
  
 </body> 
  
@@ -87,7 +87,7 @@
             <p>Santa Ococha</p>
             <p>Perú</p>
         </div>
-        <div>
+        <div class="redes">
             <ul>
                 <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
                 <li><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></li>
