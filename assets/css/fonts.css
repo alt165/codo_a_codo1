@@ -13,11 +13,11 @@ body {
 }
 .titulo{
     top: 35%;
-    font-size: 4rem;
+    font-size: 7vw;
 }
 .subtitulo{
     top: 42%;
-    font-size: 2rem;
+    font-size: 4vw;
 }
 .izquierda .titulo{
     position: relative;
