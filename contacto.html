@@ -13,14 +13,16 @@
     <link rel="stylesheet" href="assets/css/fonts.css">
     <script src="https://kit.fontawesome.com/6b9df1234c.js" crossorigin="anonymous"></script>
     <script src="assets/js/contacto.js"></script>
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+    <script async src='https://www.google.com/recaptcha/api.js?hl=es'></script>
     <title>Hotel Numa - Contacto</title> 
 </head> 
  
 <body> 
-    <!-- Probando -->
+    
     <header>
-        <div class="header">        
-            <img class="logo" src="assets/img/logo.png" alt="logo Cabañas Numa">
+        <div class="header">
+            <img class="logo" src="assets/img/logo.png" alt="Cabañas Numa">
             <p class="lugar">Santa Ococha - Perú</p>
         </div>
         <nav>
@@ -33,7 +35,7 @@
                 </ul>
             </div>
         </nav>
-    </header>  
+    </header>
     <h1 class="titulo_contacto">Contacto 
         <!-- <div class="nav_logo_centrar"> 
             <img src="assets/img/WhatsApp-logo.jpg" alt="" width="50" height="50"> 
@@ -86,39 +88,47 @@
  
                     <section> 
                         <input id="btm-submit" type="submit" value="Enviar"> 
+                        <span class="msg-error error"></span>
+<div id="recaptcha" class="g-recaptcha" data-sitekey="6Ld3U6wiAAAAAPHQ3six8CLLeUa1ejLJ0yHFZ0eH"></div>
                     </section> 
                 </div> 
+                
                 <br> 
             </fieldset> 
         </form> 
     </div> 
 </body> 
- 
-<footer> 
-    <section> 
-        <div><img class="logo" src="assets/img/logo.png" alt="logo Hotel Numa"> </div> 
-        <div> 
-            <h3>Contacto</h3> 
-            <p>907-456 87454</p> 
-            <p>email</p> 
-        </div> 
-        <div> 
-            <h3>Dirección</h3> 
-            <p>Av. de las Rosas 1754</p> 
-            <p>Santa Ococha</p> 
-            <p>Perú</p> 
-        </div> 
-        <div class="redes"> 
-            <ul> 
-                <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li> 
-                <li><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></li> 
-                <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li> 
-            </ul> 
+
+<footer>
+    <section>
+        <div><img class="logo" src="assets/img/logo.png" alt="logo Hotel Numa"> </div>
+        <div class="info_footer">
+            <div>
+                <h3>Contacto</h3>
+                <p>907-456 87454</p>
+                <p>email</p>
+            </div>
+            <div>
+                <h3>Dirección</h3>
+                <p>Av. de las Rosas 1754</p>
+                <p>Santa Ococha</p>
+                <p>Perú</p>
+            </div>
+            <div class="redes">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
         </div>
+    </section>
     <section class="desarrolladores">
         <p>Desarrollado por Cañete Andrés, Chen Romana y Lambrechts José</p>
         <p>Copyright 2022 &copy; Todos los derechos reservados.</p>
     </section>
 </footer>
- 
+
+</body>
+
 </html>
