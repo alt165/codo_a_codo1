@@ -19,6 +19,12 @@ body {
     top: 42%;
     font-size: 4vw;
 }
+@media all and (min-width: 1000px){
+    .titulo{
+      font-size: 5vw;
+      
+    }
+  }
 .izquierda .titulo{
     position: relative;
     color: #275775;

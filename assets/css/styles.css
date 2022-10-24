@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body{
@@ -31,47 +32,8 @@ body{
   height: fit-content;
   
 }
-@media all and (min-width:601px) {
-  #nav_iconos{
-    display: none;
-  }
-}
-@media all and (max-width: 600px) {  
 
-    .header{  
-      display: flex;  
-      flex-direction: column;
-    }
-    .nav_items ul {
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-      padding-inline-start: 0;
-      font-size: 1vw;
-      padding: 10px;
-  }
-  .nav_items{
-    max-height:auto;
-    background-color: #275775;
-    
-  }
-  a .boton{
-    display: none;
-  }
-  .siguiente{ 
-    display: flex;
-    flex-direction: column;
-  }
-  .palabra_nav {
-    display: none;
-  }
-  #nav_texto , .titulo, .subtitulo{  
-    display: none;
-  }
-  #principal{
-    flex-direction: column;
-  }
-}
+
 header{
   width: 100vw;
 }
@@ -88,7 +50,7 @@ header{
 
 nav {
   background-color: #275775;
-  width: 100%;
+  width: 100vw;
   /* max-width: 1000px; */
   margin: auto;
   max-height: 50px;
@@ -431,7 +393,67 @@ opacity: 1;
   border-radius: 1rem; 
   padding: 1rem; 
 }
-.texto_principal {
+/* .texto_principal {
+  width: 200%;
   font-size: 1vw;
   color:red;
+} */
+msg-error {
+  color: #c65848;
+}
+.g-recaptcha.error {
+  border: solid 2px #c64848;
+  padding: .2em;
+  width: 19em;
+}
+@media all and (min-width:601px) {
+  #nav_iconos{
+    display: none;
+  }
+}
+@media all and (max-width: 600px) {  
+
+    .header{  
+      display: flex;  
+      flex-direction: column;
+    }
+    .nav_items ul {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      padding-inline-start: 0;
+      font-size: 1vw;
+      padding: 10px;
+  }
+  .nav_items{
+    max-height:auto;
+    background-color: #275775;
+    
+  }
+  a .boton{
+    display: none;
+  }
+  .siguiente{ 
+    display: flex;
+    flex-direction: column;
+  }
+  .palabra_nav {
+    display: none;
+  }
+  #nav_texto , .subtitulo, .foto{  
+    display: none;
+  }
+   #principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .izquierda{
+    width: 100%;
+    padding-bottom: 5vw;
+  }
+  .derecha > .imagen{
+    width: 100%;
+  }
+
 }

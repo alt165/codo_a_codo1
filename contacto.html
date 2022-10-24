@@ -1,7 +1,7 @@
-<!DOCTYPE html> 
-<html lang="en"> 
- 
-<head> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,95 +9,116 @@
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <script src="https://kit.fontawesome.com/6b9df1234c.js" crossorigin="anonymous"></script>
     <script src="assets/js/contacto.js"></script>
     <script async src="https://www.google.com/recaptcha/api.js"></script>
     <script async src='https://www.google.com/recaptcha/api.js?hl=es'></script>
-    <title>Hotel Numa - Contacto</title> 
-</head> 
- 
-<body> 
-    
+    <title>Hotel Numa - Contacto</title>
+</head>
+
+<body>
+
     <header>
         <div class="header">
-            <img class="logo" src="assets/img/logo.png" alt="Cabañas Numa">
+            <img class="logo" src="assets/img/logo.png" alt="logo Cabañas Numa">
             <p class="lugar">Santa Ococha - Perú</p>
         </div>
         <nav>
             <div class="nav_items">
-                <ul>
+                <ul id="nav_texto">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="turismo.html">Turismo</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
+                <ul id="nav_iconos">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                        </a></li>
+                    <li>
+                        <a href="servicios.html">
+                            <i class="fa-solid fa-bell-concierge"></i>
+                        </a></li>
+                    <li>
+                        <a href="turismo.html">
+                            <i class="fa-solid fa-mountain-sun iconos_nav"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">
+                            <i class="fa-solid fa-address-card"></i>
+                        </a>
+                    </li>
             </div>
         </nav>
     </header>
-    <h1 class="titulo_contacto">Contacto 
+    <h1 class="titulo_contacto">Contacto
         <!-- <div class="nav_logo_centrar"> 
             <img src="assets/img/WhatsApp-logo.jpg" alt="" width="50" height="50"> 
         </div>  -->
-    </h1> 
-    <div class="contenedor-contactor"> 
-        <form class="form-long" action="https://formspree.io/f/moqrrarr" id="formulario" method="post"> 
-            <fieldset> 
-                <!--Grupo nombre--> 
-                <div class="formulario__grupo" id="grupo__nombre"> 
-                    <div class="formulario__grupo-input"> 
-                        <input class="input" type="text" name="nombre" id="nombre" placeholder=" Nombre" required 
-                            autofocus> 
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i> 
-                    </div> 
-                    <p class="formulario__input-error">El nombre sólo puede contener letras y espacios</p> 
-                </div> 
-                <br> 
-                <!--Grupo Apellido--> 
-                <div class="formulario__grupo" id="grupo__apellido"> 
-                    <div class="formulario__grupo-input"> 
-                        <input class="input" type="text" name="apellido" id="apellido" placeholder=" Apellido" required 
-                            autofocus> 
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i> 
- 
-                    </div> 
-                    <p class="formulario__input-error">El apellido sólo puede contener letras y espacios</p> 
-                </div> 
-                <br> 
-                <!--Grupo email--> 
-                <div class="formulario__grupo" id="grupo__email"> 
-                    <div class="formulario__grupo-input"> 
-                        <input class="input" type="email" name="email" id="email" 
-                            placeholder=" E-mail: name@example.com" required autofocus> 
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i> 
-                    </div> 
-                    <p class="formulario__input-error">El mail sólo puede contener letras, números, puntos, guiones y 
-                        guión 
-                        bajo</p> 
-                </div> 
-                <br> 
-                <div> 
-                    <label for="consultas">Consulta: </label> 
-                    <textarea class="input" name="consultas" placeholder="consultas" cols="30" rows="10"></textarea> 
-                </div> 
-                <div class="centrar"> 
-                    <section> 
-                        <input id="btm-reset" type="reset" name="Reset"> 
-                    </section> 
- 
-                    <section> 
-                        <input id="btm-submit" type="submit" value="Enviar"> 
-                        <span class="msg-error error"></span>
-<div id="recaptcha" class="g-recaptcha" data-sitekey="6Ld3U6wiAAAAAPHQ3six8CLLeUa1ejLJ0yHFZ0eH"></div>
-                    </section> 
-                </div> 
-                
-                <br> 
-            </fieldset> 
-        </form> 
-    </div> 
-</body> 
+    </h1>
+    <div class="contenedor-contactor">
+        <form class="form-long" action="https://formspree.io/f/moqrrarr" id="formulario" method="post">
+            <fieldset>
+                <!--Grupo nombre-->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <div class="formulario__grupo-input">
+                        <input class="input" type="text" name="nombre" id="nombre" placeholder=" Nombre" required
+                            autofocus>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre sólo puede contener letras y espacios</p>
+                </div>
+                <br>
+                <!--Grupo Apellido-->
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <div class="formulario__grupo-input">
+                        <input class="input" type="text" name="apellido" id="apellido" placeholder=" Apellido" required
+                            autofocus>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+
+                    </div>
+                    <p class="formulario__input-error">El apellido sólo puede contener letras y espacios</p>
+                </div>
+                <br>
+                <!--Grupo email-->
+                <div class="formulario__grupo" id="grupo__email">
+                    <div class="formulario__grupo-input">
+                        <input class="input" type="email" name="email" id="email"
+                            placeholder=" E-mail: name@example.com" required autofocus>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El mail sólo puede contener letras, números, puntos, guiones y
+                        guión
+                        bajo</p>
+                </div>
+                <br>
+                <div>
+                    <label for="consultas">Consulta: </label>
+                    <textarea class="input" name="consultas" placeholder="consultas" cols="30" rows="10"></textarea>
+                </div>
+                <div class="centrar">
+                    <span class="msg-error error"></span>
+                    <div id="recaptcha" class="g-recaptcha" data-sitekey="6Ld3U6wiAAAAAPHQ3six8CLLeUa1ejLJ0yHFZ0eH">
+                    </div>
+                    <section>
+                        <input id="btm-reset" type="reset" name="Reset">
+                    </section>
+
+                    <section>
+                        <input id="btm-submit" type="submit" value="Enviar">
+
+                    </section>
+                </div>
+
+                <br>
+            </fieldset>
+        </form>
+    </div>
+</body>
 
 <footer>
     <section>
