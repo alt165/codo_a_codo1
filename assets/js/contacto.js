@@ -73,7 +73,7 @@ inputs.forEach((input) => {
  input.addEventListener('keyup', validarFormulario); 
  input.addEventListener('blur', validarFormulario); 
 });
-$( '#btn-validate' ).click(function(){
+$( '#btm-submit' ).click(function(){
     var $captcha = $( '#recaptcha' ),
         response = grecaptcha.getResponse();
       if (response.length === 0) {
