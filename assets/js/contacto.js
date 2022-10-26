@@ -15,6 +15,20 @@ const campos = {
  email: false, 
   
 } 
+const validarCaptcha= (e) => { 
+  var $captcha = $( '#recaptcha' ),
+      response = grecaptcha.getResponse();
+    if (response.length === 0) {
+    $( '.msg-error').text( "reCAPTCHA is mandatory" );
+    if( !$captcha.hasClass( "error" ) ){
+      $captcha.addClass( "error" );
+    }
+  } else {
+    $( '.msg-error' ).text('');
+    $captcha.removeClass( "error" );
+    alert( 'reCAPTCHA marked' );
+  }
+})
  
 const validarFormulario = (e) => { 
  switch (e.target.name) { 
@@ -70,20 +84,8 @@ const validarFormulario = (e) => {
 }
 
 inputs.forEach((input) => { 
+  input.addEventListener('keyup', validarCaptcha);
+  input.addEventListener('blur', validarCaptcha); 
  input.addEventListener('keyup', validarFormulario); 
  input.addEventListener('blur', validarFormulario); 
 });
-$( '#btm-submit' ).click(function(){
-    var $captcha = $( '#recaptcha' ),
-        response = grecaptcha.getResponse();
-      if (response.length === 0) {
-      $( '.msg-error').text( "reCAPTCHA is mandatory" );
-      if( !$captcha.hasClass( "error" ) ){
-        $captcha.addClass( "error" );
-      }
-    } else {
-      $( '.msg-error' ).text('');
-      $captcha.removeClass( "error" );
-      alert( 'reCAPTCHA marked' );
-    }
-  })
